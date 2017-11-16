@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IVM-a9-uzC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Lkd-FZ-jDC">
+            <objects>
+                <viewController id="IVM-a9-uzC" customClass="HomeViewController" customModule="teste_vaga_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mz6-Kd-qHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ig-Bm-Voa">
+                                <rect key="frame" x="32" y="57" width="311" height="440"/>
+                                <connections>
+                                    <segue destination="V77-eq-pvk" kind="embed" identifier="containerViewSegue" id="VeU-Gl-gYG"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mI9-7P-HCV">
+                                <rect key="frame" x="32" y="539" width="311" height="57"/>
+                                <color key="backgroundColor" red="0.30980392156862746" green="0.12941176470588234" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Rq1-Y5-niV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Atualizar">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reloadPhoto:" destination="IVM-a9-uzC" eventType="touchUpInside" id="hL0-AS-PMf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mI9-7P-HCV" firstAttribute="top" secondItem="8ig-Bm-Voa" secondAttribute="bottom" constant="42" id="2xV-GN-nSn"/>
+                            <constraint firstItem="8ig-Bm-Voa" firstAttribute="top" secondItem="obX-Ro-wJb" secondAttribute="top" constant="37" id="4bX-Da-3fZ"/>
+                            <constraint firstItem="obX-Ro-wJb" firstAttribute="trailing" secondItem="mI9-7P-HCV" secondAttribute="trailing" constant="32" id="7ls-3T-zqF"/>
+                            <constraint firstItem="8ig-Bm-Voa" firstAttribute="leading" secondItem="obX-Ro-wJb" secondAttribute="leading" constant="32" id="J9F-Dm-K9p"/>
+                            <constraint firstItem="mI9-7P-HCV" firstAttribute="leading" secondItem="obX-Ro-wJb" secondAttribute="leading" constant="32" id="Soy-0D-B1o"/>
+                            <constraint firstItem="obX-Ro-wJb" firstAttribute="bottom" secondItem="mI9-7P-HCV" secondAttribute="bottom" constant="71" id="Xxm-dy-irI"/>
+                            <constraint firstItem="obX-Ro-wJb" firstAttribute="trailing" secondItem="8ig-Bm-Voa" secondAttribute="trailing" constant="32" id="sCP-LG-Thv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="obX-Ro-wJb"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoContainer" destination="8ig-Bm-Voa" id="Odb-ZE-ddl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6BX-pp-Gsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="-19.340329835082461"/>
+        </scene>
+        <!--Container Photo View Controller-->
+        <scene sceneID="b4q-6m-R4t">
+            <objects>
+                <viewController id="V77-eq-pvk" customClass="ContainerPhotoViewController" customModule="teste_vaga_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" hidden="YES" contentMode="scaleToFill" id="nRG-MQ-UZX">
+                        <rect key="frame" x="0.0" y="0.0" width="311" height="440"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KuM-2Z-0RN">
+                                <rect key="frame" x="16" y="67" width="279" height="236"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-9v-08l">
+                                <rect key="frame" x="16" y="347" width="279" height="49"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.12941176469999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Zo6-Az-XhM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Fechar">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dissmisModal:" destination="V77-eq-pvk" eventType="touchUpInside" id="0NP-dM-Pc3"/>
+                                    <action selector="reloadPhoto:" destination="IVM-a9-uzC" eventType="touchUpInside" id="FrL-02-vIn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gRi-9v-08l" firstAttribute="top" secondItem="KuM-2Z-0RN" secondAttribute="bottom" constant="44" id="4fq-ih-5uX"/>
+                            <constraint firstItem="KuM-2Z-0RN" firstAttribute="leading" secondItem="kHD-vu-QRm" secondAttribute="leading" constant="16" id="L3U-FC-Wgs"/>
+                            <constraint firstItem="kHD-vu-QRm" firstAttribute="trailing" secondItem="KuM-2Z-0RN" secondAttribute="trailing" constant="16" id="Miz-LD-7gW"/>
+                            <constraint firstItem="gRi-9v-08l" firstAttribute="trailing" secondItem="KuM-2Z-0RN" secondAttribute="trailing" id="Njc-kd-0fK"/>
+                            <constraint firstItem="kHD-vu-QRm" firstAttribute="bottom" secondItem="gRi-9v-08l" secondAttribute="bottom" constant="44" id="gqw-Sp-DHh"/>
+                            <constraint firstItem="gRi-9v-08l" firstAttribute="leading" secondItem="KuM-2Z-0RN" secondAttribute="leading" id="sxa-ng-ifa"/>
+                            <constraint firstItem="KuM-2Z-0RN" firstAttribute="top" secondItem="kHD-vu-QRm" secondAttribute="top" constant="67" id="v7g-Qd-joO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kHD-vu-QRm"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageVIew" destination="KuM-2Z-0RN" id="mQy-0u-dFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0E5-PS-Dhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.39999999999998" y="-20.689655172413794"/>
+        </scene>
+    </scenes>
+</document>

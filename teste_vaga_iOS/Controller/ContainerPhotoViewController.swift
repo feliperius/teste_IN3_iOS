@@ -22,7 +22,7 @@ class ContainerPhotoViewController: UIViewController {
     }
     
     func changeImage(image:UIImage?) {
-      self.photoImageVIew.image = image
+       self.photoImageVIew.image = image
        self.view.isHidden = false
     }
 

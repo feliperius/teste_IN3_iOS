@@ -12,7 +12,6 @@ class URLProvider: NSObject {
     
     static let urlString = "https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo"
     
-  
     
     class var baseURL: URL {
         return  URL(string: urlString)!

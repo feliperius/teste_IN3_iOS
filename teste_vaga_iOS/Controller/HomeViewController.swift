@@ -11,7 +11,6 @@ import UIKit
 protocol ContainerPhotoDelegate{
     func changePhoto(image:UIImage)
 }
-
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var photoContainer: UIView!

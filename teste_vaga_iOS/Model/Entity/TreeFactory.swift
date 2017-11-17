@@ -13,7 +13,6 @@ import UIKit
 final class TreeFactory {
     static var treePool: [String: TreeType] = [:]
     
-    
     class func getTree(image: UIImage,name:String,position:CGPoint) -> TreeType? {
         let tree = TreeType.init(name:name, image:image,position:position)
         

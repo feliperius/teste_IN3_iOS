@@ -12,9 +12,10 @@ protocol ContainerPhotoDelegate{
     func changePhoto(image:UIImage)
 }
 class HomeViewController: UIViewController {
-
+    //MARK: Outlets
     @IBOutlet weak var photoContainer: UIView!
     @IBOutlet weak var refreshButton: UIButton!
+    //MARK: Properties
     var containerPhotoView: ContainerPhotoViewController?
     
     override func viewDidLoad() {
@@ -23,7 +24,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func reloadPhoto(_ sender: Any) {
         self.getPicture()
-   }
+    }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "containerViewSegue" {
@@ -32,12 +33,10 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func generateTree(){
-        let SCREEN_WIDTH = UIScreen.main.bounds.size.width
-        let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
-        let positionX =  CGFloat(arc4random_uniform(UInt32(SCREEN_WIDTH)))
-        let positionY =  CGFloat(arc4random_uniform(UInt32(SCREEN_HEIGHT)))
-        FlyWeighFlorest.plantTree(image:#imageLiteral(resourceName: "img_tree"), position:CGPoint(x:positionX, y:positionY), name:"tree", viewController:self)
+    func verifyTrees(){
+        if  FlyWeightFlorest.trees.count > 10 {
+            
+        }
     }
     
 }
@@ -58,6 +57,13 @@ extension HomeViewController{
                 }
             })
         }
+    }
+    func generateTree(){
+        let SCREEN_WIDTH = UIScreen.main.bounds.size.width
+        let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
+        let positionX =  CGFloat(arc4random_uniform(UInt32(SCREEN_WIDTH)))
+        let positionY =  CGFloat(arc4random_uniform(UInt32(SCREEN_HEIGHT)))
+        FlyWeightFlorest.plantTree(image:#imageLiteral(resourceName: "img_tree"), position:CGPoint(x:positionX, y:positionY), name:"tree", viewController:self)
     }
 }
 

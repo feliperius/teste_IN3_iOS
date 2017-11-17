@@ -12,7 +12,6 @@ class TreeType: NSObject {
     var name:String?
     var imageView:UIImageView?
  
-    
     init(name:String,image:UIImage,position:CGPoint) {
         self.name  =  name
         self.imageView =  UIImageView(image:image)

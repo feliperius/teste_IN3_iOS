@@ -8,7 +8,7 @@
 
 import UIKit
 
-class  FlyWeighFlorest {
+class FlyWeightFlorest {
     
     static var trees:[TreeType] = []
     
@@ -28,11 +28,4 @@ class  FlyWeighFlorest {
             }
         }
     }
-    
-    
-    
-    
-    
-    
-
 }

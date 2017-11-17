@@ -20,7 +20,7 @@
 		2F68E5681FBD2E5900207373 /* ContainerPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68E5671FBD2E5800207373 /* ContainerPhotoViewController.swift */; };
 		2F6FB9621FBD3FDB001D902D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FB9611FBD3FDB001D902D /* UIViewExtension.swift */; };
 		2FB68FB71FBE83B900566B58 /* TreeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68FB61FBE83B900566B58 /* TreeFactory.swift */; };
-		2FB68FB91FBE86C400566B58 /* FlyWeighFlorest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68FB81FBE86C400566B58 /* FlyWeighFlorest.swift */; };
+		2FB68FB91FBE86C400566B58 /* FlyWeightFlorest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68FB81FBE86C400566B58 /* FlyWeightFlorest.swift */; };
 		2FB68FBB1FBE98B700566B58 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68FBA1FBE98B700566B58 /* Tree.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +40,9 @@
 		2F68E5671FBD2E5800207373 /* ContainerPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerPhotoViewController.swift; sourceTree = "<group>"; };
 		2F6FB9611FBD3FDB001D902D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2FB68FB61FBE83B900566B58 /* TreeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFactory.swift; sourceTree = "<group>"; };
-		2FB68FB81FBE86C400566B58 /* FlyWeighFlorest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeighFlorest.swift; sourceTree = "<group>"; };
+		2FB68FB81FBE86C400566B58 /* FlyWeightFlorest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeightFlorest.swift; sourceTree = "<group>"; };
 		2FB68FBA1FBE98B700566B58 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		2FD6A6591FBF44C900C5C7AF /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		2F68E5511FBCAB1000207373 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2FD6A6571FBF44B500C5C7AF /* UIKIT */,
 				2F68E5531FBCAB2500207373 /* Storyboard */,
 				2F68E5541FBCAC2600207373 /* Extensions */,
 			);
@@ -159,7 +161,7 @@
 			children = (
 				2FB68FBA1FBE98B700566B58 /* Tree.swift */,
 				2FB68FB61FBE83B900566B58 /* TreeFactory.swift */,
-				2FB68FB81FBE86C400566B58 /* FlyWeighFlorest.swift */,
+				2FB68FB81FBE86C400566B58 /* FlyWeightFlorest.swift */,
 				2F10A2DF1FBF1F6500422F40 /* TreeType.swift */,
 			);
 			path = Entity;
@@ -172,6 +174,22 @@
 				2F68E5491FBCA6E500207373 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		2FD6A6571FBF44B500C5C7AF /* UIKIT */ = {
+			isa = PBXGroup;
+			children = (
+				2FD6A6581FBF44BB00C5C7AF /* Alerts */,
+			);
+			path = UIKIT;
+			sourceTree = "<group>";
+		};
+		2FD6A6581FBF44BB00C5C7AF /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				2FD6A6591FBF44C900C5C7AF /* AlertUtils.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB68FB91FBE86C400566B58 /* FlyWeighFlorest.swift in Sources */,
+				2FB68FB91FBE86C400566B58 /* FlyWeightFlorest.swift in Sources */,
 				2F68E5681FBD2E5900207373 /* ContainerPhotoViewController.swift in Sources */,
 				2F68E5641FBD20D800207373 /* NasaService.swift in Sources */,
 				2F68E5401FBCA6E500207373 /* HomeViewController.swift in Sources */,

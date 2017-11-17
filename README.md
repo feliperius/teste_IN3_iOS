@@ -15,8 +15,7 @@ Clone o repositório em sua máquina local:
 git clone https://github.com/feliperius/teste_IN3_iOS.git
 ```
 Em seguida, abra o projeto no Xcode:
-open  teste_IN3_iOS.xcodeproj
-Agora você está pronto para começar.
+open  teste_IN3_iOS.xcodeproj Agora você está pronto para começar.
 
 
 ### Autor 

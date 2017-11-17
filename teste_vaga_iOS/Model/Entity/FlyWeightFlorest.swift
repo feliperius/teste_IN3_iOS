@@ -22,7 +22,7 @@ class FlyWeightFlorest {
     }
     
     class func drawTree(viewController:UIViewController) {
-        for tree in FlyWeighFlorest.trees{
+        for tree in FlyWeightFlorest.trees{
             if let treeImageView = tree.imageView {
                 viewController.view.addSubview(treeImageView)
             }

@@ -17,13 +17,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var refreshButton: UIButton!
     //MARK: Properties
     var containerPhotoView: ContainerPhotoViewController?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func reloadPhoto(_ sender: Any) {
-        self.getPicture()
+       self.getPicture()
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,8 +34,8 @@ class HomeViewController: UIViewController {
     }
     
     func verifyTrees(){
-        if  FlyWeightFlorest.trees.count > 10 {
-            
+        if  FlyWeightFlorest.trees.count == 10 {
+            AlertUtils.showAlertSuccess(title:"EBA!", message:"Foram plantadas 10 árvores", viewController:self)
         }
     }
     
@@ -64,6 +64,7 @@ extension HomeViewController{
         let positionX =  CGFloat(arc4random_uniform(UInt32(SCREEN_WIDTH)))
         let positionY =  CGFloat(arc4random_uniform(UInt32(SCREEN_HEIGHT)))
         FlyWeightFlorest.plantTree(image:#imageLiteral(resourceName: "img_tree"), position:CGPoint(x:positionX, y:positionY), name:"tree", viewController:self)
+        self.verifyTrees()
     }
 }
 

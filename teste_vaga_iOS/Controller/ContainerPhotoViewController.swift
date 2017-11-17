@@ -8,10 +8,14 @@
 
 import UIKit
 
+protocol CreateTreeProtocol {
+    func createTree()
+}
 
 class ContainerPhotoViewController: UIViewController {
  
     @IBOutlet weak var photoImageVIew: UIImageView!
+    var delegate:CreateTreeProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,7 @@ class ContainerPhotoViewController: UIViewController {
     }
     @IBAction func dissmisModal(_ sender: Any) {
         self.view.isHidden = true
+        self.delegate?.createTree()
     }
     
     func changeImage(image:UIImage?) {

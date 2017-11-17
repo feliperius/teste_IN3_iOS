@@ -14,6 +14,10 @@
         <scene sceneID="Lkd-FZ-jDC">
             <objects>
                 <viewController id="IVM-a9-uzC" customClass="HomeViewController" customModule="teste_vaga_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BIJ-yC-7hv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ld1-Ks-ctY"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mz6-Kd-qHg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,17 +51,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mI9-7P-HCV" firstAttribute="top" secondItem="8ig-Bm-Voa" secondAttribute="bottom" constant="42" id="2xV-GN-nSn"/>
-                            <constraint firstItem="8ig-Bm-Voa" firstAttribute="top" secondItem="obX-Ro-wJb" secondAttribute="top" constant="37" id="4bX-Da-3fZ"/>
-                            <constraint firstItem="obX-Ro-wJb" firstAttribute="trailing" secondItem="mI9-7P-HCV" secondAttribute="trailing" constant="32" id="7ls-3T-zqF"/>
-                            <constraint firstItem="8ig-Bm-Voa" firstAttribute="leading" secondItem="obX-Ro-wJb" secondAttribute="leading" constant="32" id="J9F-Dm-K9p"/>
-                            <constraint firstItem="mI9-7P-HCV" firstAttribute="leading" secondItem="obX-Ro-wJb" secondAttribute="leading" constant="32" id="Soy-0D-B1o"/>
-                            <constraint firstItem="obX-Ro-wJb" firstAttribute="bottom" secondItem="mI9-7P-HCV" secondAttribute="bottom" constant="71" id="Xxm-dy-irI"/>
-                            <constraint firstItem="obX-Ro-wJb" firstAttribute="trailing" secondItem="8ig-Bm-Voa" secondAttribute="trailing" constant="32" id="sCP-LG-Thv"/>
+                            <constraint firstItem="8ig-Bm-Voa" firstAttribute="top" secondItem="BIJ-yC-7hv" secondAttribute="bottom" constant="37" id="4bX-Da-3fZ"/>
+                            <constraint firstAttribute="trailing" secondItem="mI9-7P-HCV" secondAttribute="trailing" constant="32" id="7ls-3T-zqF"/>
+                            <constraint firstItem="8ig-Bm-Voa" firstAttribute="leading" secondItem="mz6-Kd-qHg" secondAttribute="leading" constant="32" id="J9F-Dm-K9p"/>
+                            <constraint firstItem="mI9-7P-HCV" firstAttribute="leading" secondItem="mz6-Kd-qHg" secondAttribute="leading" constant="32" id="Soy-0D-B1o"/>
+                            <constraint firstItem="Ld1-Ks-ctY" firstAttribute="top" secondItem="mI9-7P-HCV" secondAttribute="bottom" constant="71" id="Xxm-dy-irI"/>
+                            <constraint firstAttribute="trailing" secondItem="8ig-Bm-Voa" secondAttribute="trailing" constant="32" id="sCP-LG-Thv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="obX-Ro-wJb"/>
+                        <viewLayoutGuide key="safeArea" id="qbr-9G-k6M"/>
                     </view>
                     <connections>
                         <outlet property="photoContainer" destination="8ig-Bm-Voa" id="Odb-ZE-ddl"/>
+                        <outlet property="refreshButton" destination="mI9-7P-HCV" id="iiG-vR-E8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BX-pp-Gsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,6 +73,10 @@
         <scene sceneID="b4q-6m-R4t">
             <objects>
                 <viewController id="V77-eq-pvk" customClass="ContainerPhotoViewController" customModule="teste_vaga_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KRP-I6-Yp0"/>
+                        <viewControllerLayoutGuide type="bottom" id="LBR-Uj-gtI"/>
+                    </layoutGuides>
                     <view key="view" hidden="YES" contentMode="scaleToFill" id="nRG-MQ-UZX">
                         <rect key="frame" x="0.0" y="0.0" width="311" height="440"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,14 +108,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gRi-9v-08l" firstAttribute="top" secondItem="KuM-2Z-0RN" secondAttribute="bottom" constant="44" id="4fq-ih-5uX"/>
-                            <constraint firstItem="KuM-2Z-0RN" firstAttribute="leading" secondItem="kHD-vu-QRm" secondAttribute="leading" constant="16" id="L3U-FC-Wgs"/>
-                            <constraint firstItem="kHD-vu-QRm" firstAttribute="trailing" secondItem="KuM-2Z-0RN" secondAttribute="trailing" constant="16" id="Miz-LD-7gW"/>
+                            <constraint firstItem="KuM-2Z-0RN" firstAttribute="leading" secondItem="nRG-MQ-UZX" secondAttribute="leading" constant="16" id="L3U-FC-Wgs"/>
+                            <constraint firstAttribute="trailing" secondItem="KuM-2Z-0RN" secondAttribute="trailing" constant="16" id="Miz-LD-7gW"/>
                             <constraint firstItem="gRi-9v-08l" firstAttribute="trailing" secondItem="KuM-2Z-0RN" secondAttribute="trailing" id="Njc-kd-0fK"/>
-                            <constraint firstItem="kHD-vu-QRm" firstAttribute="bottom" secondItem="gRi-9v-08l" secondAttribute="bottom" constant="44" id="gqw-Sp-DHh"/>
+                            <constraint firstItem="LBR-Uj-gtI" firstAttribute="top" secondItem="gRi-9v-08l" secondAttribute="bottom" constant="44" id="gqw-Sp-DHh"/>
                             <constraint firstItem="gRi-9v-08l" firstAttribute="leading" secondItem="KuM-2Z-0RN" secondAttribute="leading" id="sxa-ng-ifa"/>
-                            <constraint firstItem="KuM-2Z-0RN" firstAttribute="top" secondItem="kHD-vu-QRm" secondAttribute="top" constant="67" id="v7g-Qd-joO"/>
+                            <constraint firstItem="KuM-2Z-0RN" firstAttribute="top" secondItem="KRP-I6-Yp0" secondAttribute="bottom" constant="67" id="v7g-Qd-joO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="kHD-vu-QRm"/>
+                        <viewLayoutGuide key="safeArea" id="d2V-Tv-xVF"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                 <real key="value" value="1"/>

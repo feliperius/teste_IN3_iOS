@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F10A2E01FBF1F6500422F40 /* TreeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10A2DF1FBF1F6500422F40 /* TreeType.swift */; };
 		2F68E53E1FBCA6E500207373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68E53D1FBCA6E500207373 /* AppDelegate.swift */; };
 		2F68E5401FBCA6E500207373 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68E53F1FBCA6E500207373 /* HomeViewController.swift */; };
 		2F68E5451FBCA6E500207373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F68E5441FBCA6E500207373 /* Assets.xcassets */; };
@@ -18,9 +19,13 @@
 		2F68E5661FBD24E600207373 /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68E5651FBD24E600207373 /* URLProvider.swift */; };
 		2F68E5681FBD2E5900207373 /* ContainerPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68E5671FBD2E5800207373 /* ContainerPhotoViewController.swift */; };
 		2F6FB9621FBD3FDB001D902D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FB9611FBD3FDB001D902D /* UIViewExtension.swift */; };
+		2FB68FB71FBE83B900566B58 /* TreeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68FB61FBE83B900566B58 /* TreeFactory.swift */; };
+		2FB68FB91FBE86C400566B58 /* FlyWeighFlorest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68FB81FBE86C400566B58 /* FlyWeighFlorest.swift */; };
+		2FB68FBB1FBE98B700566B58 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68FBA1FBE98B700566B58 /* Tree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F10A2DF1FBF1F6500422F40 /* TreeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeType.swift; sourceTree = "<group>"; };
 		2F68E53A1FBCA6E500207373 /* teste_vaga_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teste_vaga_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F68E53D1FBCA6E500207373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F68E53F1FBCA6E500207373 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		2F68E5651FBD24E600207373 /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
 		2F68E5671FBD2E5800207373 /* ContainerPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerPhotoViewController.swift; sourceTree = "<group>"; };
 		2F6FB9611FBD3FDB001D902D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2FB68FB61FBE83B900566B58 /* TreeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFactory.swift; sourceTree = "<group>"; };
+		2FB68FB81FBE86C400566B58 /* FlyWeighFlorest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeighFlorest.swift; sourceTree = "<group>"; };
+		2FB68FBA1FBE98B700566B58 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,10 @@
 		2F68E55C1FBCB11700207373 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				2FB68FBA1FBE98B700566B58 /* Tree.swift */,
+				2FB68FB61FBE83B900566B58 /* TreeFactory.swift */,
+				2FB68FB81FBE86C400566B58 /* FlyWeighFlorest.swift */,
+				2F10A2DF1FBF1F6500422F40 /* TreeType.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -235,12 +247,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB68FB91FBE86C400566B58 /* FlyWeighFlorest.swift in Sources */,
 				2F68E5681FBD2E5900207373 /* ContainerPhotoViewController.swift in Sources */,
 				2F68E5641FBD20D800207373 /* NasaService.swift in Sources */,
 				2F68E5401FBCA6E500207373 /* HomeViewController.swift in Sources */,
 				2F68E5661FBD24E600207373 /* URLProvider.swift in Sources */,
 				2F68E53E1FBCA6E500207373 /* AppDelegate.swift in Sources */,
 				2F68E5581FBCAD5900207373 /* UIView+IBInspector.swift in Sources */,
+				2FB68FB71FBE83B900566B58 /* TreeFactory.swift in Sources */,
+				2F10A2E01FBF1F6500422F40 /* TreeType.swift in Sources */,
+				2FB68FBB1FBE98B700566B58 /* Tree.swift in Sources */,
 				2F6FB9621FBD3FDB001D902D /* UIViewExtension.swift in Sources */,
 				2F68E5621FBD175600207373 /* NasaDAO.swift in Sources */,
 			);

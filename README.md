@@ -7,7 +7,7 @@ Estas instruções irão levá-lo a uma cópia do projeto em funcionamento em su
 
 ### Pré-requisitos
 O que você precisa para construir, executar e testar o aplicativo:
-Xcode 8.3.3 ou versão superior.
+Xcode 9.0 ou posterior.
 
 
 Clone o repositório em sua máquina local:
